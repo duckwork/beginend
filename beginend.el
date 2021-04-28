@@ -350,7 +350,7 @@ If optional argument P is present test at that point instead of `point'."
     (while (and (not (org-on-heading-p)) (not (eobp)))
       (forward-line))
     (when (eobp)
-      (setf (point) (point-min))))
+      (goto-char (point-min))))
   (progn))
 
 (declare-function nroam-goto "nroam")
